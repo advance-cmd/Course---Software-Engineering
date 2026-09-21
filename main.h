@@ -1,7 +1,4 @@
 ﻿#pragma once
 
-class main
-{
-public:
-    
-};
+
+int main();
