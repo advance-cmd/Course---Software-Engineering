@@ -1,0 +1,11 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+# Visual Studio / MSVC build output
+.vs/
+x64/
+Debug/
+Release/
+*.user
