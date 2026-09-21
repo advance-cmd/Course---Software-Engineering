@@ -9,3 +9,6 @@ x64/
 Debug/
 Release/
 *.user
+
+# Python
+__pycache__/
