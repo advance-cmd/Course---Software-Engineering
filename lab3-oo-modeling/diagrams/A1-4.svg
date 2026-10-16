@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 811 789" width="811" height="789" font-family="Arial, 'Microsoft YaHei', sans-serif">
+<rect width="811" height="789" fill="#ffffff"/>
+<polyline points="195.0,152.0 195.0,242.0" fill="none" stroke="#9b1c2e" stroke-width="1.2"/>
+<text x="203.0" y="172.0" font-size="13" text-anchor="start" fill="#000" >1</text>
+<text x="203.0" y="232.0" font-size="13" text-anchor="start" fill="#000" >0..*</text>
+<text x="187.0" y="201.0" font-size="13" text-anchor="end" fill="#333" >下单</text>
+<polyline points="388.0,301.0 480.0,301.0" fill="none" stroke="#9b1c2e" stroke-width="1.2"/>
+<polygon points="370.0,301.0 379.0,306.5 388.0,301.0 379.0,295.5" fill="#9b1c2e" stroke="#9b1c2e" stroke-width="1.2"/>
+<text x="383.6" y="293.0" font-size="13" text-anchor="middle" fill="#000" >1</text>
+<text x="460.2" y="293.0" font-size="13" text-anchor="middle" fill="#000" >1..*</text>
+<text x="425.0" y="318.0" font-size="13" text-anchor="middle" fill="#333" >包含</text>
+<polyline points="618.5,350.0 618.5,440.0" fill="none" stroke="#9b1c2e" stroke-width="1.2"/>
+<text x="626.5" y="370.0" font-size="13" text-anchor="start" fill="#000" >0..*</text>
+<text x="626.5" y="430.0" font-size="13" text-anchor="start" fill="#000" >1</text>
+<text x="610.5" y="399.0" font-size="13" text-anchor="end" fill="#333" >对应</text>
+<polyline points="195.0,374.0 195.0,464.0" fill="none" stroke="#9b1c2e" stroke-width="1.2"/>
+<text x="203.0" y="394.0" font-size="13" text-anchor="start" fill="#000" >1</text>
+<text x="203.0" y="454.0" font-size="13" text-anchor="start" fill="#000" >0..*</text>
+<text x="187.0" y="423.0" font-size="13" text-anchor="end" fill="#333" >支付</text>
+<polyline points="370.0,255.5 425.0,255.5 425.0,89.5 543.5,89.5" fill="none" stroke="#9b1c2e" stroke-width="1.2" stroke-dasharray="6,4"/>
+<polyline points="532.5,84.0 543.5,89.5 532.5,95.0" fill="none" stroke="#9b1c2e" stroke-width="1.2"/>
+<text x="417.0" y="176.5" font-size="13" text-anchor="end" fill="#333" >«use»</text>
+<polyline points="100.5,629 731.0,629" fill="none" stroke="#9b1c2e" stroke-width="1.2"/>
+<line x1="100.5" y1="629" x2="100.5" y2="669" stroke="#9b1c2e" stroke-width="1.2"/>
+<line x1="280.0" y1="629" x2="280.0" y2="669" stroke="#9b1c2e" stroke-width="1.2"/>
+<line x1="447.0" y1="629" x2="447.0" y2="669" stroke="#9b1c2e" stroke-width="1.2"/>
+<line x1="593.0" y1="629" x2="593.0" y2="669" stroke="#9b1c2e" stroke-width="1.2"/>
+<line x1="731.0" y1="629" x2="731.0" y2="669" stroke="#9b1c2e" stroke-width="1.2"/>
+<polyline points="195.0,629.0 195.0,577.0" fill="none" stroke="#9b1c2e" stroke-width="1.2"/>
+<polygon points="195.0,562.0 187.0,577.0 203.0,577.0" fill="#ffffff" stroke="#9b1c2e" stroke-width="1.2"/>
+<rect x="54.0" y="20" width="282" height="132" fill="#ffffd2" stroke="#9b1c2e" stroke-width="1.3"/>
+<text x="195.0" y="38.0" font-size="13" text-anchor="middle" fill="#000" font-weight="bold">Customer</text>
+<line x1="54.0" y1="47" x2="336.0" y2="47" stroke="#9b1c2e" stroke-width="1.1"/>
+<text x="62.0" y="65.0" font-size="13" text-anchor="start" fill="#000" >- name : String</text>
+<text x="62.0" y="82.0" font-size="13" text-anchor="start" fill="#000" >- contact : String</text>
+<text x="62.0" y="99.0" font-size="13" text-anchor="start" fill="#000" >- deliveryAddress : String</text>
+<text x="62.0" y="116.0" font-size="13" text-anchor="start" fill="#000" >- active : boolean</text>
+<line x1="54.0" y1="125" x2="336.0" y2="125" stroke="#9b1c2e" stroke-width="1.1"/>
+<text x="62.0" y="143.0" font-size="13" text-anchor="start" fill="#000" >+ placeOrder(createDate : LocalDate) : Order</text>
+<rect x="20" y="242" width="350" height="132" fill="#ffffd2" stroke="#9b1c2e" stroke-width="1.3"/>
+<text x="195.0" y="260.0" font-size="13" text-anchor="middle" fill="#000" font-weight="bold">Order</text>
+<line x1="20" y1="269" x2="370" y2="269" stroke="#9b1c2e" stroke-width="1.1"/>
+<text x="28.0" y="287.0" font-size="13" text-anchor="start" fill="#000" >- createDate : LocalDate</text>
+<text x="28.0" y="304.0" font-size="13" text-anchor="start" fill="#000" >- status : OrderStatus</text>
+<line x1="20" y1="313" x2="370" y2="313" stroke="#9b1c2e" stroke-width="1.1"/>
+<text x="28.0" y="331.0" font-size="13" text-anchor="start" fill="#000" >+ addDetail(product : Product, quantity : int) : OrderDetail</text>
+<text x="28.0" y="348.0" font-size="13" text-anchor="start" fill="#000" >+ addPayment(payment : Payment) : void</text>
+<text x="28.0" y="365.0" font-size="13" text-anchor="start" fill="#000" >+ setStatus(status : OrderStatus) : void</text>
+<rect x="543.5" y="20" width="150" height="139" fill="#ffffd2" stroke="#9b1c2e" stroke-width="1.3"/>
+<text x="618.5" y="38.0" font-size="11" text-anchor="middle" fill="#000" >«enumeration»</text>
+<text x="618.5" y="55.0" font-size="13" text-anchor="middle" fill="#000" font-weight="bold">OrderStatus</text>
+<line x1="543.5" y1="64" x2="693.5" y2="64" stroke="#9b1c2e" stroke-width="1.1"/>
+<text x="551.5" y="82.0" font-size="13" text-anchor="start" fill="#000" >CREATE</text>
+<text x="551.5" y="99.0" font-size="13" text-anchor="start" fill="#000" >PAID</text>
+<text x="551.5" y="116.0" font-size="13" text-anchor="start" fill="#000" >SHIPPING</text>
+<text x="551.5" y="133.0" font-size="13" text-anchor="start" fill="#000" >DELIVERED</text>
+<text x="551.5" y="150.0" font-size="13" text-anchor="start" fill="#000" >CANCEL</text>
+<rect x="480" y="252" width="277" height="98" fill="#ffffd2" stroke="#9b1c2e" stroke-width="1.3"/>
+<text x="618.5" y="270.0" font-size="13" text-anchor="middle" fill="#000" font-weight="bold">OrderDetail</text>
+<line x1="480" y1="279" x2="757" y2="279" stroke="#9b1c2e" stroke-width="1.1"/>
+<text x="488.0" y="297.0" font-size="13" text-anchor="start" fill="#000" >- quantity : int</text>
+<line x1="480" y1="306" x2="757" y2="306" stroke="#9b1c2e" stroke-width="1.1"/>
+<text x="488.0" y="324.0" font-size="13" text-anchor="start" fill="#000" >+ calculateSubTotal() : double</text>
+<text x="488.0" y="341.0" font-size="13" text-anchor="start" fill="#000" >+ calculateWeight() : double</text>
+<rect x="480" y="440" width="277" height="149" fill="#ffffd2" stroke="#9b1c2e" stroke-width="1.3"/>
+<text x="618.5" y="458.0" font-size="13" text-anchor="middle" fill="#000" font-weight="bold">Product</text>
+<line x1="480" y1="467" x2="757" y2="467" stroke="#9b1c2e" stroke-width="1.1"/>
+<text x="488.0" y="485.0" font-size="13" text-anchor="start" fill="#000" >- title : String</text>
+<text x="488.0" y="502.0" font-size="13" text-anchor="start" fill="#000" >- weight : double</text>
+<text x="488.0" y="519.0" font-size="13" text-anchor="start" fill="#000" >- description : String</text>
+<text x="488.0" y="536.0" font-size="13" text-anchor="start" fill="#000" >- price : double</text>
+<line x1="480" y1="545" x2="757" y2="545" stroke="#9b1c2e" stroke-width="1.1"/>
+<text x="488.0" y="563.0" font-size="13" text-anchor="start" fill="#000" >+ getPriceForQuantity(quantity : int) : double</text>
+<text x="488.0" y="580.0" font-size="13" text-anchor="start" fill="#000" >+ getWeight() : double</text>
+<rect x="118.0" y="464" width="154" height="98" fill="#ffffd2" stroke="#9b1c2e" stroke-width="1.3"/>
+<text x="195.0" y="482.0" font-size="13" text-anchor="middle" fill="#000" font-weight="bold" font-style="italic">Payment</text>
+<text x="195.0" y="499.0" font-size="11" text-anchor="middle" fill="#000" font-style="italic">{abstract}</text>
+<line x1="118.0" y1="508" x2="272.0" y2="508" stroke="#9b1c2e" stroke-width="1.1"/>
+<text x="126.0" y="526.0" font-size="13" text-anchor="start" fill="#000" >- amount : double</text>
+<line x1="118.0" y1="535" x2="272.0" y2="535" stroke="#9b1c2e" stroke-width="1.1"/>
+<text x="126.0" y="553.0" font-size="13" text-anchor="start" fill="#000" >+ getAmount() : double</text>
+<rect x="20.0" y="669" width="161" height="100" fill="#ffffd2" stroke="#9b1c2e" stroke-width="1.3"/>
+<text x="100.5" y="687.0" font-size="13" text-anchor="middle" fill="#000" font-weight="bold">Credit</text>
+<line x1="20.0" y1="696" x2="181.0" y2="696" stroke="#9b1c2e" stroke-width="1.1"/>
+<text x="28.0" y="714.0" font-size="13" text-anchor="start" fill="#000" >- number : String</text>
+<text x="28.0" y="731.0" font-size="13" text-anchor="start" fill="#000" >- type : String</text>
+<text x="28.0" y="748.0" font-size="13" text-anchor="start" fill="#000" >- expireDate : LocalDate</text>
+<line x1="20.0" y1="757" x2="181.0" y2="757" stroke="#9b1c2e" stroke-width="1.1"/>
+<rect x="199.0" y="669" width="162" height="66" fill="#ffffd2" stroke="#9b1c2e" stroke-width="1.3"/>
+<text x="280.0" y="687.0" font-size="13" text-anchor="middle" fill="#000" font-weight="bold">Cash</text>
+<line x1="199.0" y1="696" x2="361.0" y2="696" stroke="#9b1c2e" stroke-width="1.1"/>
+<text x="207.0" y="714.0" font-size="13" text-anchor="start" fill="#000" >- cashTendered : double</text>
+<line x1="199.0" y1="723" x2="361.0" y2="723" stroke="#9b1c2e" stroke-width="1.1"/>
+<rect x="379.0" y="669" width="136" height="83" fill="#ffffd2" stroke="#9b1c2e" stroke-width="1.3"/>
+<text x="447.0" y="687.0" font-size="13" text-anchor="middle" fill="#000" font-weight="bold">WireTransfer</text>
+<line x1="379.0" y1="696" x2="515.0" y2="696" stroke="#9b1c2e" stroke-width="1.1"/>
+<text x="387.0" y="714.0" font-size="13" text-anchor="start" fill="#000" >- bankID : String</text>
+<text x="387.0" y="731.0" font-size="13" text-anchor="start" fill="#000" >- bankName : String</text>
+<line x1="379.0" y1="740" x2="515.0" y2="740" stroke="#9b1c2e" stroke-width="1.1"/>
+<rect x="533.0" y="669" width="120" height="66" fill="#ffffd2" stroke="#9b1c2e" stroke-width="1.3"/>
+<text x="593.0" y="687.0" font-size="13" text-anchor="middle" fill="#000" font-weight="bold">AliPay</text>
+<line x1="533.0" y1="696" x2="653.0" y2="696" stroke="#9b1c2e" stroke-width="1.1"/>
+<text x="541.0" y="714.0" font-size="13" text-anchor="start" fill="#000" >- number : String</text>
+<line x1="533.0" y1="723" x2="653.0" y2="723" stroke="#9b1c2e" stroke-width="1.1"/>
+<rect x="671.0" y="669" width="120" height="66" fill="#ffffd2" stroke="#9b1c2e" stroke-width="1.3"/>
+<text x="731.0" y="687.0" font-size="13" text-anchor="middle" fill="#000" font-weight="bold">WeixinPay</text>
+<line x1="671.0" y1="696" x2="791.0" y2="696" stroke="#9b1c2e" stroke-width="1.1"/>
+<text x="679.0" y="714.0" font-size="13" text-anchor="start" fill="#000" >- number : String</text>
+<line x1="671.0" y1="723" x2="791.0" y2="723" stroke="#9b1c2e" stroke-width="1.1"/>
+</svg>
